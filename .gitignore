@@ -9,3 +9,5 @@ gradlew.bat
 doc.txt
 mp4.txt
 gradle
+logs
+.DS_Store

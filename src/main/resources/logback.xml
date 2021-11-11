@@ -17,7 +17,7 @@
         <!--滚动策略-->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!--路径-->
-            <fileNamePattern>${logName}-info-%d.log</fileNamePattern>
+            <fileNamePattern>logs/${logName}-info-%d.log</fileNamePattern>
         </rollingPolicy>
     </appender>
 
