@@ -87,6 +87,7 @@ public class Downloader {
         }
         start = System.currentTimeMillis();
         List<LessonInfo> lessons = parseLessonInfo();
+        FileUtil.del(basePath + "/下载失败.txt");
         if (!CollectionUtil.isEmpty(lessons)) {
             int i = parseVideoInfo(courseId, lessons, this.downloadType);
             if (i > 0) {

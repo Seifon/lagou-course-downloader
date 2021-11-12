@@ -279,13 +279,6 @@ public class BigCourseDownloader {
         long end = System.currentTimeMillis();
         log.info("所有媒体处理耗时:{} s", (end - startTime) / 1000);
         log.info("媒体输出目录:{}", this.savePath);
-        File file = new File(this.savePath, "下载完成.txt");
-        try {
-            file.createNewFile();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
         if (!Stats.isEmpty()) {
             log.info("\n\n失败统计信息\n\n");
             Stats.failedCount.forEach((key, value) -> System.out.println(key + " -> " + value.get()));
